@@ -1,0 +1,2 @@
+# springfoo
+spring boot playground
