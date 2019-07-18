@@ -25,7 +25,7 @@ class GenList extends React.Component {
    render() {
        return e('ul', null, [
         e('li', {key: 1}, [
-                'item1',
+                e('span', {key: 1-0}, 'item1'),
                 e('button', {key: 1-1}, 'btn1')
             ]),
         e('li', {key: 2}, 'item2'),
