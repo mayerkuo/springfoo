@@ -1,2 +1,5 @@
 # springfoo
-spring boot playground
+
+**Spring Boot Playground**
+
+It's testing project for spring boot + react js.
