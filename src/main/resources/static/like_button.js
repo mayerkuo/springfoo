@@ -1,6 +1,7 @@
 'use strict';
 
 const e = React.createElement;
+const btn_cls_name = "btn btn-primary";
 
 class LikeButton extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class LikeButton extends React.Component {
 
     return e(
       'button',
-      { onClick: () => this.setState({ liked: true }) },
+      { className: btn_cls_name, onClick: () => this.setState({ liked: true }) },
       'Like'
     );
   }
@@ -26,7 +27,7 @@ class GenList extends React.Component {
        return e('ul', null, [
         e('li', {key: 1}, [
                 e('span', {key: 1-0}, 'item1'),
-                e('button', {key: 1-1}, 'btn1')
+                e('button', {className: btn_cls_name, key: 1-1}, 'btn1')
             ]),
         e('li', {key: 2}, 'item2'),
         e('li', {key: 3}, 'item3'),
@@ -39,6 +40,7 @@ class ClickAndRender extends React.Component {
         return e(
         'button',
         {
+            className: btn_cls_name,
             onClick: () => {
                 console.log('on btn click');
                 const domContainer2 = document.querySelector('#ul_container');
